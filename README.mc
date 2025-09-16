@@ -35,8 +35,6 @@ CS-312-MiniProject-1/
 
 ├── README.md 
 
-├── .gitignore 
-
 └── blog-app/ 
 
     ├── package.json 
@@ -97,3 +95,4 @@ body-parser: Parse form data
 
 
 Posts are stored in memory and do not persist between server restarts. 
+

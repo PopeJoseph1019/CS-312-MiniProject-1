@@ -1,0 +1,296 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+line-height: 1.6;
+color: #333;
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+min-height: 100vh;
+}
+
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+
+
+.header {
+background: rgba(255, 255, 255, 0.95);
+backdrop-filter: blur(10px);
+border-radius: 15px;
+padding: 2rem;
+margin-bottom: 2rem;
+box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+text-align: center;
+}
+
+.header h1 {
+color: #4a5568;
+font-size: 2.5rem;
+margin-bottom: 0.5rem;
+font-weight: 700;
+}
+
+.header p {
+color: #718096;
+font-size: 1.1rem;
+}
+
+
+.create-post {
+background: rgba(255, 255, 255, 0.95);
+backdrop-filter: blur(10px);
+border-radius: 15px;
+padding: 2rem;
+margin-bottom: 2rem;
+box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.create-post h2 {
+color: #4a5568;
+margin-bottom: 1.5rem;
+font-size: 1.8rem;
+}
+
+.form-group {
+margin-bottom: 1.5rem;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 0.5rem;
+font-weight: 600;
+color: #4a5568;
+}
+
+.form-control {
+width: 100%;
+padding: 12px 16px;
+border: 2px solid #e2e8f0;
+border-radius: 8px;
+font-size: 1rem;
+transition: all 0.3s ease;
+font-family: inherit;
+}
+
+.form-control:focus {
+outline: none;
+border-color: #667eea;
+box-shadow: 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+textarea.form-control {
+resize: vertical;
+min-height: 120px;
+}
+
+
+
+.btn {
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+color: white;
+border: none;
+padding: 12px 24px;
+border-radius: 8px;
+font-size: 1rem;
+font-weight: 600;
+cursor: pointer;
+transition: all 0.3s ease;
+text-decoration: none;
+display: inline-block;
+}
+
+.btn:hover {
+transform: translateY(-2px);
+box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.btn-danger {
+background: linear-gradient(135deg, #fc8181 0%, #f56565 100%);
+}
+
+.btn-danger:hover {
+box-shadow: 0 4px 12px rgba(245, 101, 101, 0.4);
+}
+
+.btn-secondary {
+background: linear-gradient(135deg, #a0aec0 0%, #718096 100%);
+}
+
+.btn-secondary:hover {
+box-shadow: 0 4px 12px rgba(113, 128, 150, 0.4);
+}
+
+
+.posts-section h2 {
+color: white;
+margin-bottom: 1.5rem;
+font-size: 1.8rem;
+text-align: center;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.posts-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+gap: 2rem;
+}
+
+.post-card {
+background: rgba(255, 255, 255, 0.95);
+backdrop-filter: blur(10px);
+border-radius: 15px;
+padding: 2rem;
+box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease;
+}
+
+.post-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.post-title {
+color: #4a5568;
+font-size: 1.5rem;
+margin-bottom: 0.5rem;
+font-weight: 700;
+line-height: 1.3;
+}
+
+.post-meta {
+color: #718096;
+font-size: 0.9rem;
+margin-bottom: 1rem;
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+}
+
+.post-content {
+color: #4a5568;
+margin-bottom: 1.5rem;
+line-height: 1.7;
+}
+
+.post-actions {
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+}
+
+.btn-small {
+padding: 8px 16px;
+font-size: 0.9rem;
+}
+
+
+
+.edit-container {
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.edit-form {
+background: rgba(255, 255, 255, 0.95);
+backdrop-filter: blur(10px);
+border-radius: 15px;
+padding: 2rem;
+box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form h1 {
+color: #4a5568;
+margin-bottom: 1.5rem;
+font-size: 2rem;
+}
+
+.form-actions {
+display: flex;
+gap: 15px;
+justify-content: flex-start;
+flex-wrap: wrap;
+}
+
+
+
+.empty-state {
+text-align: center;
+padding: 3rem;
+background: rgba(255, 255, 255, 0.95);
+backdrop-filter: blur(10px);
+border-radius: 15px;
+box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.empty-state h3 {
+color: #4a5568;
+margin-bottom: 1rem;
+font-size: 1.5rem;
+}
+
+.empty-state p {
+color: #718096;
+font-size: 1.1rem;
+}
+
+
+
+@media (max-width: 768px) {
+.container {
+padding: 15px;
+}
+
+.header h1 {
+font-size: 2rem;
+}
+
+.posts-grid {
+grid-template-columns: 1fr;
+gap: 1.5rem;
+}
+
+.post-card {
+padding: 1.5rem;
+}
+
+.create-post,
+.edit-form {
+padding: 1.5rem;
+}
+
+.form-actions {
+justify-content: center;
+}
+
+.post-actions {
+justify-content: center;
+}
+}
+
+@media (max-width: 480px) {
+.header {
+padding: 1.5rem;
+}
+
+.header h1 {
+font-size: 1.8rem;
+}
+
+.post-card {
+padding: 1.25rem;
+}
+
+.create-post,
+.edit-form {
+padding: 1.25rem;
+}
+}
